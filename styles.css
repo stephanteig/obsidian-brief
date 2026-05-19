@@ -55,7 +55,8 @@
    UTILITIES
 ────────────────────────────────────────────────── */
 
-.is-hidden { display: none !important; }
+.dev-modal-client-banner.is-hidden,
+.dev-step-indicator.is-hidden { display: none; }
 .brief-input-full { width: 100%; }
 
 /* ──────────────────────────────────────────────────
@@ -398,8 +399,8 @@
     transition: color var(--dev-transition);
 }
 
-.dev-cc-ribbon-active {
-    color: var(--interactive-accent) !important;
+.side-dock-ribbon-action.dev-cc-ribbon-active {
+    color: var(--interactive-accent);
 }
 
 .dev-cc-suggest-row {
