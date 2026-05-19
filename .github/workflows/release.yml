@@ -27,13 +27,20 @@ jobs:
       - name: Build plugin
         run: npm run build
 
-      - name: Attest build provenance
+      - name: Attest main.js
         uses: actions/attest-build-provenance@v1
         with:
-          subject-path: |
-            main.js
-            manifest.json
-            styles.css
+          subject-path: main.js
+
+      - name: Attest manifest.json
+        uses: actions/attest-build-provenance@v1
+        with:
+          subject-path: manifest.json
+
+      - name: Attest styles.css
+        uses: actions/attest-build-provenance@v1
+        with:
+          subject-path: styles.css
 
       - name: Create release
         uses: softprops/action-gh-release@v2
