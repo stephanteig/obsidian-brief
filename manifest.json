@@ -1,0 +1,10 @@
+{
+    "id": "brief",
+    "name": "Brief",
+    "version": "1.0.0",
+    "minAppVersion": "1.0.0",
+    "description": "Client workspace manager for Obsidian. Switch client spaces, create structured notes with frontmatter, and auto-generate client dashboards.",
+    "author": "Stephan Teig",
+    "authorUrl": "https://github.com/stephanteig",
+    "isDesktopOnly": false
+}
